@@ -41,6 +41,8 @@
 
 - Notification bar, if the user is online & a group chat or single user message is received & user is on a different chat, live notification count is displayed with details.
 
+![image info](./frontend/src/images/2.png)
+
 - Cloudinary storage for user profile picture
 
 ![image info](./frontend/src/images/6.png)
