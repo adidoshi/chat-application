@@ -5,11 +5,12 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ChatProvider from "./context/ChatProvider";
+import { myTheme } from "./customTheme/myTheme";
 
 ReactDOM.render(
   <ChakraProvider>
     <BrowserRouter>
-      <ChatProvider>
+      <ChatProvider theme={myTheme}>
         <App />
       </ChatProvider>
     </BrowserRouter>

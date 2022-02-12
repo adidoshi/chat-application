@@ -124,10 +124,12 @@ const SideDrawer = () => {
   return (
     <>
       <Box
+        bg="primary"
+        color="white"
+        borderColor="#15202B"
         d="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="white"
         w="100%"
         p="5px 10px 5px 10px"
         borderWidth="5px">
@@ -171,7 +173,10 @@ const SideDrawer = () => {
             </MenuList>
           </Menu>
           <Menu>
-            <MenuButton as={Button} bg="white" rightIcon={<ChevronDownIcon />}>
+            <MenuButton
+              as={Button}
+              bg="#657786"
+              rightIcon={<ChevronDownIcon />}>
               <Avatar
                 size="sm"
                 cursor="pointer"
@@ -179,12 +184,25 @@ const SideDrawer = () => {
                 src={user.pic}
               />
             </MenuButton>
-            <MenuList>
+            <MenuList bg="#657786">
               <ProfileModal user={user}>
-                <MenuItem>My Profile</MenuItem>
+                <MenuItem
+                  _hover={{
+                    background: "white",
+                    color: "teal.500",
+                  }}>
+                  My Profile
+                </MenuItem>
               </ProfileModal>
               <MenuDivider />
-              <MenuItem onClick={logoutHandler}>Logout</MenuItem>
+              <MenuItem
+                onClick={logoutHandler}
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                }}>
+                Logout
+              </MenuItem>
             </MenuList>
           </Menu>
         </div>
@@ -193,9 +211,11 @@ const SideDrawer = () => {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
+          <DrawerHeader bg="#15202B" color="white" borderBottomWidth="1px">
+            Search Users
+          </DrawerHeader>
 
-          <DrawerBody>
+          <DrawerBody bg="#15202B" color="white">
             <Box d="flex" pb={2}>
               <Input
                 placeholder="Search by name or email"
@@ -203,7 +223,15 @@ const SideDrawer = () => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <Button onClick={handleSearch}>Go</Button>
+              <Button
+                bg="#AAB8C2"
+                onClick={handleSearch}
+                _hover={{
+                  background: "white",
+                  color: "teal.500",
+                }}>
+                Go
+              </Button>
             </Box>
             {loading ? (
               <ChatLoading />

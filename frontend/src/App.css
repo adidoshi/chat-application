@@ -3,14 +3,13 @@
 .boxContainer {
   min-height: 100vh;
   display: flex;
-  background-image: url("https://cdn.wallpapersafari.com/96/32/rjfCtM.png");
+  background-color: #15202b;
   background-size: cover;
   background-position: center;
 }
 
 .bgMatch {
   min-height: 100vh;
-  background-image: url("https://cdn.wallpapersafari.com/96/32/rjfCtM.png");
   background-size: cover;
   background-position: center;
 }

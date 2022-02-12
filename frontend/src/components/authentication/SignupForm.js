@@ -181,7 +181,7 @@ const SignupForm = () => {
               <Center>
                 <Button
                   type="submit"
-                  colorScheme="orange"
+                  colorScheme="blue"
                   variant="solid"
                   isLoading={picLoading}
                   my={1}>
@@ -190,7 +190,7 @@ const SignupForm = () => {
                 <Button
                   type="reset"
                   ms={2}
-                  colorScheme="orange"
+                  colorScheme="blue"
                   variant="outline">
                   Reset
                 </Button>

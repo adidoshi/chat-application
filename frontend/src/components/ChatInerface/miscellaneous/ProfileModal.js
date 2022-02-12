@@ -22,20 +22,29 @@ const ProfileModal = ({ user, children }) => {
       {children ? (
         <span onClick={onOpen}>{children}</span>
       ) : (
-        <IconButton d={{ base: "flex" }} icon={<ViewIcon />} onClick={onOpen} />
+        <IconButton
+          d={{ base: "flex" }}
+          bg="#657786"
+          icon={<ViewIcon />}
+          onClick={onOpen}
+        />
       )}
       <Modal size="lg" isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent h="410px">
           <ModalHeader
+            bg="#15202B"
+            color="white"
             fontSize="40px"
             fontFamily="Poppins"
             d="flex"
             justifyContent="center">
             {user.name}
           </ModalHeader>
-          <ModalCloseButton />
+          <ModalCloseButton color="white" />
           <ModalBody
+            bg="#15202B"
+            color="white"
             d="flex"
             flexDir="column"
             justifyContent="space-between"
@@ -49,7 +58,7 @@ const ProfileModal = ({ user, children }) => {
             <Text>{user.email}</Text>
           </ModalBody>
 
-          <ModalFooter>
+          <ModalFooter bg="#15202B" color="white">
             <Button colorScheme="blue" mr={3} onClick={onClose}>
               Close
             </Button>

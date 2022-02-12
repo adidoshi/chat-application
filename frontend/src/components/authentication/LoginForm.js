@@ -52,8 +52,7 @@ const LoginForm = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      history.push("/chats");
-      window.location.reload();
+      history.go("/chats");
     } catch (error) {
       toast({
         title: "Error occured",
@@ -119,3 +118,5 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+// window.location.reload();
