@@ -156,11 +156,15 @@ const SideDrawer = () => {
                 </Badge>
               )}
             </MenuButton>
-            <MenuList pl={2}>
+            <MenuList pl={2} bg="#657786">
               {!notification.length && "No new messages"}
               {notification.map((noti) => (
                 <MenuItem
                   key={noti._id}
+                  _hover={{
+                    background: "white",
+                    color: "teal.500",
+                  }}
                   onClick={() => {
                     setSelectedChat(noti.chat);
                     setNotification(notification.filter((n) => n !== noti));

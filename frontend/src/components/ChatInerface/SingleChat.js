@@ -211,7 +211,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             <FormControl onKeyDown={sendMessage} isRequired>
               {isTyping ? (
                 <lottie-player
-                  src="https://assets7.lottiefiles.com/private_files/lf30_ke9yawrn.json"
+                  src="https://assets1.lottiefiles.com/packages/lf20_xxgrirnx.json"
                   background="transparent"
                   size="50"
                   style={{
