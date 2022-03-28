@@ -14,6 +14,10 @@
 - ReactJs as Javascript library
 - Chakra UI for building app user interface -> (accessible component library for React applications)
 
+**Demo**:
+
+![image info](./frontend/src/animations/demo.gif)
+
 ## Core Features of the app -
 
 - Complete user authentication with JWT auth token (user signup & login).

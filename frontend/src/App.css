@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 
 .boxContainer {
-  min-height: 100vh;
+  height: max-content;
   display: flex;
   background-color: #15202b;
   background-size: cover;
   background-position: center;
+}
+
+.demo-video {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: #15202b;
 }
 
 .bgMatch {
